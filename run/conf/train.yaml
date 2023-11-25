@@ -12,7 +12,7 @@ hydra:
 defaults:
   - _self_
   - dir: local
-  - dataset: seg
+  - dataset: seg # ない
   - model: Spec2DCNN
   - feature_extractor: CNNSpectrogram
   - decoder: UNet1DDecoder
@@ -20,15 +20,15 @@ defaults:
 
 seed: 42
 exp_name: dummy
-batch_size: 32
-num_workers: 24
+batch_size: 32 # ない
+num_workers: 24 # ない
 duration: 5760 # duration * 5 = 秒数
 downsample_rate: 2
 upsample_rate: 1
 
 trainer:
   epochs: 75
-  accelerator: auto
+  accelerator: auto 
   use_amp: true
   debug: false
   gradient_clip_val: 1.0
