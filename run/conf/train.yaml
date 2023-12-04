@@ -20,7 +20,7 @@ defaults:
 
 seed: 42
 exp_name: dummy
-batch_size: 32 # ない
+batch_size: 16 # ない
 num_workers: 24 # ない
 duration: 5760 # duration * 5 = 秒数
 downsample_rate: 2
